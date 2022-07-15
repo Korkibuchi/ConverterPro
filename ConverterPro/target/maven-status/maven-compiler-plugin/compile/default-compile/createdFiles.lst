@@ -1,0 +1,6 @@
+spec\converterpro\ConverterPro.class
+spec\converterpro\NbrbCurrencyConversionService.class
+spec\converterpro\Currency.class
+spec\converterpro\CurrencyConversionService.class
+spec\converterpro\CurrencyModeService.class
+spec\converterpro\HashMapCurrencyModeService.class

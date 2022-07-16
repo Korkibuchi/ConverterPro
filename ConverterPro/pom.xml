@@ -61,7 +61,7 @@
                        <!-- ... -->
                        <archive>
                            <manifest>
-                                 <mainClass>spec.converter.ConverterPro</mainClass>
+                                 <mainClass>spec.converterpro.ConverterPro</mainClass>
                            </manifest>
                        </archive>
                        <descriptorRefs>

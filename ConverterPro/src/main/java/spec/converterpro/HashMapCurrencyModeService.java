@@ -10,7 +10,7 @@ public class HashMapCurrencyModeService implements CurrencyModeService {
   private final Map<Long, Currency> targetCurrency = new HashMap<>();
 
   public HashMapCurrencyModeService() {
-    System.out.println("HASHMAP MODE is created");
+    System.out.println("Bot started sucssesfully");
   }
 
   @Override

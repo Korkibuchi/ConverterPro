@@ -4,7 +4,7 @@ package spec.converterpro;
 
 
 public enum Currency {
-    USD("USD", 431), EUR("EUR",451),RUB("RUB",456), BYN("BYN", 0);
+    USD("USD", 431), EUR("EUR",451),RUB("RUB",456), GBP("GBP", 826), BTC("BTC", 1010), KZT("KZT", 398);
 
     private final int id;
     private final String name;

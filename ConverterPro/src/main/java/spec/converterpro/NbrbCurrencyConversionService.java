@@ -33,6 +33,24 @@ public class NbrbCurrencyConversionService implements CurrencyConversionService 
   
   private double getRate(Currency currency) {
         try {
+            if (currency.getName().equals("BTC")){
+                URL url = new URL("https://api.binance.com/api/v3/ticker/price?symbol=BTCRUB");
+                HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                con.setRequestMethod("GET");
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+                String inputLine;
+                StringBuilder response = new StringBuilder();
+                while ((inputLine = in.readLine()) != null) {
+                         response.append(inputLine);
+                }
+                in.close();
+                  
+                  JSONObject obj = new JSONObject(response.toString());
+
+                  double value = obj.getDouble("price");
+                  return value;
+            }
             if (currency.getName().equals("RUB")){
                 return 1;
             }
